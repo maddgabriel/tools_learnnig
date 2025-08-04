@@ -1,0 +1,55 @@
+Schema - definition or description of something.
+API Schema - includes API paths, possible parameters they take, and etc.
+Data Schema - shape of data, like JSON content. JSON attributes and data types, for instance.
+OpenAPI defines a schema for our API, and includes definitions of the data sent and received by our API using JSON Schema (standard for JSON data schemes).
+
+URL: https://example.com/items/foo
+Path: /items/foo 
+
+Operation - HTTP methods (GET, POST, PUT, DELETE, options, head, patch, trace) of a HTTP Request
+It's possible to comunicate with each Path using any operation.
+
+POST: used to create data
+GET: to read data
+PUT: to update data
+DELETE: to delete data
+	
+----
+
+HTTP Protocol
+HTTP Request - what comes from the user to the server and can trigger an action on server
+HTTP Response - what the server answers from a HTTP Request.
+
+"""
+Other operations available:
+- @app.post()
+- @app.put()
+- @app.delete()
+- @app.options()
+- @app.head()
+- @app.patch()
+- @app.trace()
+"""
+
+# Tip: For example, when using GraphQL you normally perform all the actions using only POST operations.
+
+----
+
+dict.update({"key": value})    ## adiciona par key/value na dict
+
+new_dict = {**old_dict} -- cria uma cópia de old_dict mas aponta para endereço de memoria diferente == variavel diferente
+new_dict = old_dict -- as duas variaveis apontam para o mesmo endereço de memória
+
+
+---
+Query() e Path() são chamados no parametro da função para fornecer suporte a validação de dados. Podem ser 
+usados tanto para parâmetros de Path ou de Query
+
+
+---
+Numerical Opreators
+
+gt: greater than
+ge: greater than or equal
+lt: less than
+le: less than or equal
